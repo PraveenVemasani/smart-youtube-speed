@@ -1,4 +1,3 @@
-// Script only 1X:
 // A simplified YouTube playback speed automation script that forces selected video categories 
 // to always play at 1x speed. It detects video changes, uses the YouTube API for category detection, and 
 // continuously enforces normal playback speed for targeted categories while leaving all other videos unchanged.
@@ -73,7 +72,7 @@ async function isOneXCategory(videoId) {
         return cache[videoId];
     }
 
-    const API_KEY = "AIzaSyBWafm0ZKuJYAZymXlatNW8wGsIxg-YQMQ"; //  Replace this
+    const API_KEY = "Please_use_your_APT_KEY"; //  Replace this with your own
 
     try {
         const res = await fetch(
