@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Smart YouTube Speed",
+  "version": "1.0",
+  "description": "Automatically adjusts playback speed based on video type",
+  "permissions": ["scripting"],
+  "host_permissions": ["https://www.youtube.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": [
+        "config/api.js",
+        "content.js"
+      ]
+    }
+  ]
+}
